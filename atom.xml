@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Dmtalen Ding's Blog]]></title>
+  <subtitle><![CDATA[Right people，right things]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://Dmtalen.com/"/>
+  <updated>2015-01-01T08:02:03.346Z</updated>
+  <id>http://Dmtalen.com/</id>
+  
+  <author>
+    <name><![CDATA[Dmtalen Ding]]></name>
+    <email><![CDATA[dreamtalen@hotmail.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[年终总结什么的..根本不会写呢..]]></title>
+    <link href="http://Dmtalen.com/2015/01/01/summary/"/>
+    <id>http://Dmtalen.com/2015/01/01/summary/</id>
+    <published>2015-01-01T06:26:36.000Z</published>
+    <updated>2015-01-01T08:01:39.000Z</updated>
+    <content type="html"><![CDATA[<p>2015年的第一天是被宿管阿姨的敲门声唤醒的，才知道外滩发生了这样的事情，好像已经查出一名复旦的女生身亡了，愿这次的事件能警醒世人，伤者早日康复！<del>(大家没事少凑热闹</del></p>
+<p>那么言归正传，回想过去的2014年，给我的感觉除了特别快以外，也伴随着不断的小纠结。</p>
+<p>出国还是读研的纠结，入了微电坑硕士是肯定要读了，要不要出国是纠结所在，暑假的时候背过1个月的GRE单词，但是最近半年还是把出国计划搁置了，当然如果某一天我能想清楚自己想要什么的话或许还会做出新的决定。</p>
+<p>CS还是EE的纠结，虽然现在回想起来当初是因为迷信了“底层优越论”入了微电坑，然后因为对WEB比较感兴趣从而萌生了硕士转CS的想法，对Android,front-end,back-end都有所涉猎，体会到了应用级别的编程总是可以给初学者立竿见影的回馈，深究下去每个分支其实也都充满了繁琐，画网页比设计一个cpu虽然听起来要low很多，但是不同dpi和浏览器的适配不比流水线转发和阻塞容易。不过还有很多情况下硬件和软件必须结合的非常紧密，complier和architecture就是对两者的要求同样重要的部分，如果我硕士仍是微电的话，应该会倾向于这方面的研究吧。</p>
+<p>不过回想起来，除了日常的上课和考试外<del>谁说大三课少轻松的</del>，还是经历了一些有意思的事情<br>3月份的时候，接触了hexo，前后调了一个多月，四月份买了域名正式上线，虽然断断续续的出了一些问题，不过拥有了一个个人网站还是很有成就感的 <del>(比如qq签名之类的有东西写了</del><br>5月份的时候去看了AT02，拍拍拍拍拍…<br>7月份，背GRE单词，听说学院买了一堆ZedBoard，去听了下实验室给浙大来交流的学长们的培训，顺便拿了一个回来玩 <del>(现在吃灰中</del><br>10月份，参加了下所谓的“黑客马拉松”活动，(这是一次土豪活动，首先是个叫做“创客工作坊”的项目，每组发了一套arduino，玩了一天感觉这个类似于小开发板的东西还是很有意思的，因为相应的套件很多，各种传感器、蓝牙wifi模块都有，可扩展性很强，平时想做个实用的小工具真的很方便，活动结束后送给我们了。<br>然后是“黑客周末”，跟一位CS的老司机搭了个“万事屋”的网站，python后端+bootstrap前端，一天多的时间实在有限，能把WEB应用尽量完善已经很不容易了，app就没有做，最后的奖品是个树莓派 <del>(其实我想要的是mac mini和moto360…</del><br>然后就是去GDG和PyCon打了个酱油，感受了下业内菊苣，本来以为PyCon上来的应该都是python脑残粉，结果发现被各种砸场，PHP是最好的编程语言…这主持人最少说了三遍233<br>11月份，科创项目结题，做的是FastICA算法在FPGA的实现，也就是把matlab代码用Verilog写一遍，中途指导老师蒋boss离职去了华为 <del>(还好研究生大腿没走</del>，最后过了答辩，交了论文，有惊无险。</p>
+<p>大概就是这样吧，可能逻辑有点混乱，还是祝各位元旦快乐，期末顺利！<br>(放完假就考试了，滚去复习了先..</p>
+]]></content>
+    
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Python 小作业分析]]></title>
+    <link href="http://Dmtalen.com/2014/12/27/post-3/"/>
+    <id>http://Dmtalen.com/2014/12/27/post-3/</id>
+    <published>2014-12-27T05:57:11.000Z</published>
+    <updated>2014-12-27T06:43:59.000Z</updated>
+    <content type="html"><![CDATA[<p>这学期二周目了Python大法，做了几道感觉挺有意思的小作业，简单分析一下：</p>
+<h2 id="过桥问题">过桥问题</h2>
+<p><em>有A、B、C、D四个人，要在夜里过一座桥。他们通过这座桥分别需要耗时1、2、5、10分钟，只有一支手电筒，并且同时最多只能两个人一起过桥，如果两个人同时过桥，所需要的时间为走的慢的那个人单独行动时所需的时间。请问，如何安排，能够在17分钟内让这四个人都能过桥？请构建N个人过桥的最佳方法（提示：可用递归解决）</em></p>
+<h3 id="简要分析">简要分析</h3>
+<p>提示要求使用递归求解该问题，想到每次过桥是两个人，应该是进行n-2的递归，分析人数在4以下的情况，最佳过桥策略为：</p>
+<ul>
+<li>如果N=1、2，所有人直接过桥。　　</li>
+<li>如果N=3，由最快的人往返一次把其他两人送过河。　　</li>
+<li>如果N≥4，设A、B为走得最快和次快的旅行者，过桥所需时间分别为a、b；<br>  而Z、Y为走得最慢和次慢的旅行者，过桥所需时间分别为z、y。那么　　　　<br>  当2b＞a+y时，由A护送Z、Y到对岸，A返回；　　　　<br>  当2b＜a+y时，A和B先到对岸，A返回，YZ到对岸，B返回；　　　　<br>  当2b＝a+y时，由A护送Z、Y到对岸，A返回。</li>
+</ul>
+<h3 id="python代码">python代码</h3>
+<a id="more"></a>
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">bridge</span><span class="params">(people)</span>:</span></div><div class="line">    num = len(people)</div><div class="line">    <span class="keyword">if</span> num == <span class="number">1</span>:</div><div class="line">        <span class="keyword">print</span> <span class="string">'-&gt;'</span>, people[<span class="number">0</span>]</div><div class="line">        <span class="keyword">return</span> people[<span class="number">0</span>]</div><div class="line">    <span class="keyword">if</span> num == <span class="number">2</span>:</div><div class="line">        <span class="keyword">print</span> <span class="string">'-&gt;'</span>, people[<span class="number">0</span>], people[<span class="number">1</span>]</div><div class="line">        <span class="keyword">return</span> people[<span class="number">1</span>]</div><div class="line">    <span class="keyword">if</span> num == <span class="number">3</span>:</div><div class="line">        <span class="keyword">print</span> <span class="string">'-&gt;'</span>, people[<span class="number">0</span>], people[<span class="number">2</span>]</div><div class="line">        <span class="keyword">print</span> <span class="string">'&lt;-'</span>, people[<span class="number">0</span>]</div><div class="line">        <span class="keyword">print</span> <span class="string">'-&gt;'</span>, people[<span class="number">0</span>], people[<span class="number">1</span>]</div><div class="line">        <span class="keyword">return</span> people[<span class="number">0</span>] + people[<span class="number">1</span>] + people[<span class="number">2</span>]</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">if</span> <span class="number">2</span> * people[<span class="number">1</span>] &gt; people[<span class="number">0</span>] + people[num - <span class="number">2</span>]:</div><div class="line">            <span class="keyword">print</span> <span class="string">'-&gt;'</span>, people[<span class="number">0</span>], people[num - <span class="number">1</span>]</div><div class="line">            <span class="keyword">print</span> <span class="string">'&lt;-'</span>, people[<span class="number">0</span>]</div><div class="line">            <span class="keyword">print</span> <span class="string">'-&gt;'</span>, people[<span class="number">0</span>], people[num - <span class="number">2</span>]</div><div class="line">            <span class="keyword">print</span> <span class="string">'&lt;-'</span>, people[<span class="number">0</span>]</div><div class="line">            <span class="keyword">return</span> <span class="number">2</span> * people[<span class="number">0</span>] + people[num - <span class="number">1</span>] + people[num - <span class="number">2</span>]  + bridge(people[:num-<span class="number">2</span>])</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="keyword">print</span> <span class="string">'-&gt;'</span>, people[<span class="number">0</span>], people[<span class="number">1</span>]</div><div class="line">            <span class="keyword">print</span> <span class="string">'&lt;-'</span>, people[<span class="number">0</span>]</div><div class="line">            <span class="keyword">print</span> <span class="string">'-&gt;'</span>, people[num - <span class="number">2</span>], people[num - <span class="number">1</span>]</div><div class="line">            <span class="keyword">print</span> <span class="string">'&lt;-'</span>, people[<span class="number">1</span>]</div><div class="line">            <span class="keyword">return</span> <span class="number">2</span> * people[<span class="number">1</span>] + people[<span class="number">0</span>] + people[num - <span class="number">1</span>] + bridge(people[:num-<span class="number">2</span>])</div><div class="line"></div><div class="line">people = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">10</span>]</div><div class="line"><span class="keyword">print</span> bridge(people)</div></pre></td></tr></table></figure>
+
+<h3 id="运行结果">运行结果</h3>
+<p><img src="http://dreamtalen-blog.qiniudn.com/bridge.jpg" alt=""></p>
+<p><em>更新ing</em></p>
+]]></content>
+    <summary type="html"><![CDATA[<p>这学期二周目了Python大法，做了几道感觉挺有意思的小作业，简单分析一下：</p>
+<h2 id="过桥问题">过桥问题</h2>
+<p><em>有A、B、C、D四个人，要在夜里过一座桥。他们通过这座桥分别需要耗时1、2、5、10分钟，只有一支手电筒，并且同时最多只能两个人一起过桥，如果两个人同时过桥，所需要的时间为走的慢的那个人单独行动时所需的时间。请问，如何安排，能够在17分钟内让这四个人都能过桥？请构建N个人过桥的最佳方法（提示：可用递归解决）</em></p>
+<h3 id="简要分析">简要分析</h3>
+<p>提示要求使用递归求解该问题，想到每次过桥是两个人，应该是进行n-2的递归，分析人数在4以下的情况，最佳过桥策略为：</p>
+<ul>
+<li>如果N=1、2，所有人直接过桥。　　</li>
+<li>如果N=3，由最快的人往返一次把其他两人送过河。　　</li>
+<li>如果N≥4，设A、B为走得最快和次快的旅行者，过桥所需时间分别为a、b；<br>  而Z、Y为走得最慢和次慢的旅行者，过桥所需时间分别为z、y。那么　　　　<br>  当2b＞a+y时，由A护送Z、Y到对岸，A返回；　　　　<br>  当2b＜a+y时，A和B先到对岸，A返回，YZ到对岸，B返回；　　　　<br>  当2b＝a+y时，由A护送Z、Y到对岸，A返回。</li>
+</ul>
+<h3 id="python代码">python代码</h3>
+]]></summary>
+    
+      <category term="python" scheme="http://Dmtalen.com/tags/python/"/>
+    
+      <category term="python" scheme="http://Dmtalen.com/categories/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[拯救Hexo小记]]></title>
+    <link href="http://Dmtalen.com/2014/10/02/Python/"/>
+    <id>http://Dmtalen.com/2014/10/02/Python/</id>
+    <published>2014-10-02T13:49:14.000Z</published>
+    <updated>2014-10-12T11:55:39.000Z</updated>
+    <content type="html"><![CDATA[<p>话说自从上次重装系统以后hexo的本地文件就被格掉了，不过也是因为那么久没写文章的缘故导致修复工作一直无限延期了。尝试了从云端恢复无望后，只能选择重新搭，比着自己以前po的文章一步步恢复设置也是醉了，不过这也让算它们发挥了一次作用233。</p>
+<p>6月份以来因为google的关系导致我的blog也被逼到墙外了，正好被人说phase主题太卡坑访客干脆过两天物色一个不被墙的主题换掉好了。</p>
+<p>最后吐槽下我的科创项目还没做完导师先离职了= =。。（快结题了亚历山大。。</p>
+]]></content>
+    
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Add "Read more" to Phase Theme]]></title>
+    <link href="http://Dmtalen.com/2014/05/07/readmore/"/>
+    <id>http://Dmtalen.com/2014/05/07/readmore/</id>
+    <published>2014-05-07T07:29:59.000Z</published>
+    <updated>2014-05-07T09:23:42.000Z</updated>
+    <content type="html"><![CDATA[<p>Phase主题在文章中使用<code>&lt;!--more--&gt;</code>添加索引后并不会在首页上生成”阅读全文”链接，于是参考了landscape主题中<code>\hexo\themes\landscape\layout\_partial\article.ejs</code>文件，为Phase主题添加”Read more”按钮：</p>
+<p>打开<code>\hexo\themes\phase\layout\_partial\article.ejs</code>文件：</p>
+<p>将</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (item.excerpt && index){ <span class="variable">%&gt;</span></div><div class="line">  &lt;<span class="variable">%-</span> item.excerpt <span class="variable">%&gt;</span></div><div class="line">&lt;% } <span class="keyword">else</span> { <span class="variable">%&gt;</span></div><div class="line">  &lt;<span class="variable">%-</span> item.content <span class="variable">%&gt;</span></div><div class="line">&lt;% } <span class="variable">%&gt;</span></div></pre></td></tr></table></figure>
+
+<p>替换为<br><a id="more"></a> </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="vbscript">&lt;% <span class="keyword">if</span> (item.excerpt && index){ %&gt;</span></div><div class="line">  <span class="vbscript">&lt;%- item.excerpt %&gt;</span>      </div><div class="line">  <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"article-more-link"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"&lt;%- config.root %&gt;&lt;%- item.path %&gt;#more"</span>&gt;</span><span class="vbscript">&lt;%= <span class="comment">'read more' %&gt;</span></span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="title">p</span>&gt;</span></div><div class="line"><span class="vbscript">&lt;% } <span class="keyword">else</span> { %&gt;</span></div><div class="line">  <span class="vbscript">&lt;%- item.content %&gt;</span></div><div class="line"><span class="vbscript">&lt;% } %&gt;</span></div></pre></td></tr></table></figure>
+
+<p>这样就实现了”Read more”功能，下面我们修改下css对按钮进行美化：</p>
+<p>打开<code>hexo\themes\phase\source\css\_partial\article.styl</code>文件，在末尾添加：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.article-more-link</div><div class="line">  display: inline-block</div><div class="line">  <span class="built_in">line</span>-height: <span class="number">1</span>em</div><div class="line">  padding: <span class="number">6</span>px <span class="number">15</span>px</div><div class="line">  border-radius: <span class="number">15</span>px</div><div class="line">  background: <span class="comment">#9d61cf</span></div><div class="line">  <span class="operator">a</span></div><div class="line">    color: <span class="comment">#ffffff		/* 修改文字颜色，因默认链接颜色与按钮背景颜色相同，故在此必须复写 */</span></div><div class="line">    &:hover</div><div class="line">      <span class="keyword">text</span>-shadow <span class="number">0</span> <span class="number">0</span> <span class="number">20</span>px <span class="comment">#ffffff</span></div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html"><![CDATA[<p>Phase主题在文章中使用<code>&lt;!--more--&gt;</code>添加索引后并不会在首页上生成”阅读全文”链接，于是参考了landscape主题中<code>\hexo\themes\landscape\layout\_partial\article.ejs</code>文件，为Phase主题添加”Read more”按钮：</p>
+<p>打开<code>\hexo\themes\phase\layout\_partial\article.ejs</code>文件：</p>
+<p>将</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (item.excerpt && index){ <span class="variable">%&gt;</span></div><div class="line">  &lt;<span class="variable">%-</span> item.excerpt <span class="variable">%&gt;</span></div><div class="line">&lt;% } <span class="keyword">else</span> { <span class="variable">%&gt;</span></div><div class="line">  &lt;<span class="variable">%-</span> item.content <span class="variable">%&gt;</span></div><div class="line">&lt;% } <span class="variable">%&gt;</span></div></pre></td></tr></table></figure>
+
+<p>替换为<br>]]></summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[DIC Lab1 Report]]></title>
+    <link href="http://Dmtalen.com/2014/04/05/post-2/"/>
+    <id>http://Dmtalen.com/2014/04/05/post-2/</id>
+    <published>2014-04-05T14:04:23.000Z</published>
+    <updated>2014-04-13T02:26:32.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="HSPICE_Simulation(task1)"><strong>HSPICE Simulation(task1)</strong></h2>
+<h3 id="NMOS_resistor_inverter">NMOS resistor inverter</h3>
+<p><img src="http://dreamtalen-blog.qiniudn.com/dic/lab1figure1.png" alt=""></p>
+<h3 id="Source_code">Source code</h3>
+<a id="more"></a> 
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">Simple NMOS Inverter</div><div class="line">.lib <span class="attribute">'cmos25</span>.lib' tt</div><div class="line">*netlist<span class="comment">---------------------------------------</span></div><div class="line">VCC vcc <span class="number">0</span> <span class="number">5</span></div><div class="line">VIN <span class="keyword">in</span> <span class="number">0</span> PULSE <span class="number">0</span> <span class="number">5</span> <span class="number">2</span>NS <span class="number">2</span>NS <span class="number">2</span>NS <span class="number">30</span>NS <span class="number">60</span>NS</div><div class="line"></div><div class="line">RB <span class="keyword">in</span> base <span class="number">10</span>k</div><div class="line">M1 <span class="keyword">out</span> base <span class="number">0</span> <span class="number">0</span> NMOS L=<span class="number">500</span>n W=<span class="number">10</span>u</div><div class="line">RC vcc <span class="keyword">out</span> <span class="number">1</span>k</div><div class="line">*extra control information<span class="comment">---------------------</span></div><div class="line">.options post=<span class="number">2</span> nomod</div><div class="line">.op</div><div class="line">*analysis<span class="comment">--------------------------------------</span></div><div class="line">.TRAN <span class="number">1</span>ns <span class="number">300</span>ns</div><div class="line">.DC VIN <span class="number">0</span> <span class="number">5</span> <span class="number">0.1</span></div><div class="line">.<span class="keyword">END</span></div></pre></td></tr></table></figure>
+
+<h3 id="Results">Results</h3>
+<p><img src="http://dreamtalen-blog.qiniudn.com/dic/lab11.png" alt=""></p>
+<p><img src="http://dreamtalen-blog.qiniudn.com/dic/lab12.png" alt=""></p>
+<h2 id="HSPICE_Simulation(task2)"><strong>HSPICE Simulation(task2)</strong></h2>
+<h3 id="CMOS_resistor_inverter">CMOS resistor inverter</h3>
+<p><img src="http://dreamtalen-blog.qiniudn.com/dic/lab13.png" alt=""></p>
+<h3 id="Source_code-1">Source code</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">Simple CMOS Inverter</div><div class="line">.lib <span class="string">'cmos25.lib'</span> tt</div><div class="line">*netlist---------------------------------------</div><div class="line">VCC vcc <span class="number">0</span> <span class="number">5</span></div><div class="line">VIN <span class="keyword">in</span> <span class="number">0</span> PULSE <span class="number">0</span> <span class="number">5</span> <span class="number">2</span>NS <span class="number">2</span>NS <span class="number">2</span>NS <span class="number">30</span>NS <span class="number">60</span>NS</div><div class="line"></div><div class="line">RB <span class="keyword">in</span> <span class="keyword">base</span> <span class="number">10</span>k</div><div class="line">M1 <span class="keyword">out</span> <span class="keyword">base</span> <span class="number">0</span> <span class="number">0</span> NMOS L=<span class="number">500</span>n W=<span class="number">10</span>u</div><div class="line">M2 <span class="keyword">out</span> <span class="keyword">base</span> vcc vcc PMOS L=<span class="number">0.5</span>u W=<span class="number">10</span>u      <span class="comment">//每次仿真前更改W的值为20,30,40,50</span></div><div class="line">*extra control information---------------------</div><div class="line">.options post=<span class="number">2</span> nomod</div><div class="line">.op</div><div class="line">*analysis--------------------------------------</div><div class="line">.TRAN <span class="number">1</span>ns <span class="number">300</span>ns</div><div class="line">.DC VIN <span class="number">0</span> <span class="number">5</span> <span class="number">0.1</span></div><div class="line">.END</div></pre></td></tr></table></figure>
+
+<h3 id="Results-1">Results</h3>
+<ul>
+<li>W=10u<br><img src="http://dreamtalen-blog.qiniudn.com/dic/lab110u.png" alt="10u"><br><img src="http://dreamtalen-blog.qiniudn.com/dic/lab110u_2.png" alt="10u_2">  </li>
+</ul>
+<ul>
+<li>W=20u<br><img src="http://dreamtalen-blog.qiniudn.com/dic/lab120u.png" alt="20u"><br><img src="http://dreamtalen-blog.qiniudn.com/dic/lab120u_2.png" alt="20u_2">  </li>
+</ul>
+<ul>
+<li>W=30u<br><img src="http://dreamtalen-blog.qiniudn.com/dic/lab130u.png" alt="30u"><br><img src="http://dreamtalen-blog.qiniudn.com/dic/lab130u_2.png" alt="30u_2">  </li>
+</ul>
+<ul>
+<li>W=40u<br><img src="http://dreamtalen-blog.qiniudn.com/dic/lab140u.png" alt="40u"><br><img src="http://dreamtalen-blog.qiniudn.com/dic/lab140u_2.png" alt="40u_2">  </li>
+</ul>
+<ul>
+<li>W=50u<br><img src="http://dreamtalen-blog.qiniudn.com/dic/lab150u.png" alt="50u"><br><img src="http://dreamtalen-blog.qiniudn.com/dic/lab150u_2.png" alt="50u_2">  </li>
+</ul>
+<h2 id="Conclution">Conclution</h2>
+<p>从以上的仿真结果中可以看出: 随着W的值逐渐增大，电压传输特性曲线中的交点右移，开关阈值Vm增大，瞬态响应曲线弯曲幅度增大。</p>
+]]></content>
+    <summary type="html"><![CDATA[<h2 id="HSPICE_Simulation(task1)"><strong>HSPICE Simulation(task1)</strong></h2>
+<h3 id="NMOS_resistor_inverter">NMOS resistor inverter</h3>
+<p><img src="http://dreamtalen-blog.qiniudn.com/dic/lab1figure1.png" alt=""></p>
+<h3 id="Source_code">Source code</h3>
+]]></summary>
+    
+      <category term="DIC" scheme="http://Dmtalen.com/categories/DIC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hexo Gallery]]></title>
+    <link href="http://Dmtalen.com/2014/03/19/photo/"/>
+    <id>http://Dmtalen.com/2014/03/19/photo/</id>
+    <published>2014-03-19T08:35:01.000Z</published>
+    <updated>2014-04-15T08:12:46.000Z</updated>
+    <content type="html"><![CDATA[<h4 id="hexo_自带的图片轮播模式测试">hexo 自带的图片轮播模式测试</h4>
+<h2 id="生成方法">生成方法</h2>
+<ol>
+<li><code>Git Bash</code>-&gt;<code>hexo new photo &quot;文章标题&quot;</code></li>
+<li>在<code>source/_posts</code>文件夹下打开生成的md文件</li>
+<li>在<code>tags:</code>标签下添加</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">photos:</div><div class="line">-<span class="ruby"> 图片网址<span class="number">1</span></span></div><div class="line">-<span class="ruby"> 图片网址<span class="number">2</span></span></div><div class="line">-<span class="ruby"> 图片网址<span class="number">3</span></span></div><div class="line">....</div></pre></td></tr></table></figure>
+
+]]></content>
+    
+    
+      <category term="Pictures" scheme="http://Dmtalen.com/categories/Pictures/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hexo Phase Theme Optimization]]></title>
+    <link href="http://Dmtalen.com/2014/03/15/post/"/>
+    <id>http://Dmtalen.com/2014/03/15/post/</id>
+    <published>2014-03-15T07:21:28.000Z</published>
+    <updated>2014-04-02T13:27:58.000Z</updated>
+    <content type="html"><![CDATA[<p>Hexo的作者tommy为用户提供了<a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank" rel="external">ThemeList</a>，当我在其中一个个翻阅时发现了Phase主题，作者给他的表述是”The most beautiful theme for Hexo.”。简单试用后便被酷似Android4.3的PhaseBeam风格背景吸引了，于是便选定为本站的主题。</p>
+<p>或许Phase是为了突出背景的beam效果，但只有Article和Menu的页面我看起来还是略显单调，而且sidebar上的小部件好像无法添加，于是我只好放弃了sidebar，在页面上添加一些个性元素。</p>
+<h2 id="添加Fork_me_on_Github">添加<em>Fork me on Github</em></h2>
+<p><a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="external">“Fork me on Github”</a>是很多hexo博主喜欢的小部件，位于页面左、右上角，不占空间而且有不对称之美(<del>强迫症患者慎用</del>)，在页面上选择一个喜欢的图案将HTML代码复制下来。打开<code>hexo\themes\phase\layout\layout.ejs</code>文件，将代码粘贴至<code>&lt;body&gt;&lt;/body&gt;</code>之间即可。</p>
+<h2 id="添加站点标题">添加站点标题</h2>
+<p>Phase主题没有标题栏确实让人很不习惯，如果访客不点开About页面的话，只有在页脚才能看到几个字的站点信息了。于是只好在合适的位置自己添加标题了，经过一番研究(<del>一个个文件试</del>)，发现在<code>hexo\themes\phase\layout\_partial\header.ejs</code>文件下添加<code>&lt;head&gt;&lt;/head&gt;</code>标签效果最好，附修改后的代码:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">p</span> <span class="attribute">id</span>=<span class="value">"blogHead"</span>&gt;</span>Dmtalen Ding.s Blog<span class="tag">&lt;/<span class="title">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">p</span> <span class="attribute">id</span>=<span class="value">"subhead"</span>&gt;</span>Right people.  Right things.<span class="tag">&lt;/<span class="title">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">style</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span><span class="css"></span></div><div class="line"><span class="at_rule">@<span class="keyword">font-face</span></span> <span class="rules">{			<span class="comment">/* 使用服务器端字体 */</span></span></div><div class="line">	<span class="rule"><span class="attribute">font-family</span>:<span class="value"> rain</span></span>;</div><div class="line">	<span class="rule"><span class="attribute">src</span>:<span class="value"><span class="function">url</span>(http://dreamtalen-blog.qiniudn.com/FallingRain.ttf)</span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line"><span class="id">#blogHead</span><span class="rules">{</span></div><div class="line">	<span class="rule"><span class="attribute">font-family</span>:<span class="value"> rain</span></span>;</div><div class="line">	<span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">2.8em</span></span></span>;</div><div class="line">	<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#F5F5F5</span></span></span>;</div><div class="line">	<span class="rule"><span class="attribute">text-shadow</span>:<span class="value"><span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="hexcolor">#fff</span></span></span>;		<span class="comment">/* 标题发光效果 */</span></div><div class="line"><span class="rule">}</span></div><div class="line"><span class="id">#subhead</span><span class="rules">{</span></div><div class="line">	<span class="rule"><span class="attribute">font-family</span>:<span class="value"> rain</span></span>;</div><div class="line">	<span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1.3em</span></span></span>;</div><div class="line">	<span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#C0C0C0</span></span></span>;</div><div class="line"><span class="rule">}</span></div><div class="line"><span class="tag">&lt;/<span class="title">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></div></pre></td></tr></table></figure>
+
+<h2 id="Tips："><em>Tips：</em></h2>
+<ul>
+<li><p>其中<code>&lt;nav&gt;&lt;/nav&gt;</code>标签是主题自带部分用来显示menu菜单，不要在其中添加元素，这样会使本身的menu内容格式出现错误。</p>
+</li>
+<li><p>站点标题的发光效果由内嵌的CSS 3代码<code>text-shadow:0 0 10px #fff</code>实现，text-shadow为文本阴影效果，在不设置偏移距离仅设置模糊效果时，便会衬托出发光效果，可以更改模糊区域的大小调整显示效果。</p>
+</li>
+<li><p>Phase主题很消耗资源，在测试beam效果时发现IE11的显示效果奇差无比(<del>天灭IE，退软保平安</del>，Firefox略显卡顿，Chrome完美支持(<del>chrome大法好</del>，如果效果实在太差可以关闭beam效果。</p>
+</li>
+</ul>
+]]></content>
+    
+    
+      <category term="hexo" scheme="http://Dmtalen.com/categories/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hexo Install Tips]]></title>
+    <link href="http://Dmtalen.com/2014/03/10/hexo-install-tips/"/>
+    <id>http://Dmtalen.com/2014/03/10/hexo-install-tips/</id>
+    <published>2014-03-10T08:08:15.000Z</published>
+    <updated>2014-03-15T07:28:27.000Z</updated>
+    <content type="html"><![CDATA[<p>hexo是一个基于Node.js的静态博客程序，可以方便的生成静态网页托管在github上。经过<a href="https://plus.google.com/u/0/+%E7%B2%92%E7%B2%92%E6%A9%99lili/posts" target="_blank" rel="external">橙子菊苣</a>介绍，了解到了这个由一名台湾大学生创建的作品，google了下安装教程，加上非常详细的官方文档，搭建过程还算顺利。</p>
+<p>“教程说的可能出现的问题一定会出，没说的问题也一定会出”的光环这次也不负众望地发挥了作用（上次给Nexus5破解电信出现一堆问题，写号时弄坏了两张sim卡，还好最后去营业厅“我也不知道怎么回事它就自己变成这样了”免费换卡了。。）</p>
+<p>介于网上教程有一箩筐，我就把自己个别遇到的问题简单分析一下：</p>
+<ul>
+<li><p>如果你是第一次用github和git的话，先把ssh设置好，官方有详细教程。</p>
+</li>
+<li><p>如果deploy过程中出现以下报错：</p>
+</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">fatal: <span class="string">'github'</span> does <span class="operator">not</span> appear <span class="built_in">to</span> be <span class="operator">a</span> git repository</div><div class="line">fatal: could <span class="operator">not</span> <span class="built_in">read</span> <span class="built_in">from</span> remote repository.</div></pre></td></tr></table></figure>
+
+<p>  请直接删除.deploy文件夹，重新deploy即可。</p>
+<ul>
+<li>如果没有绑定自己的域名，将disgus设置好后点击comment按钮出现“yoursite.com/xxxxx”和“便民导航类似的网页时，请修改_config.yml文件中的url属性，默认值是yoursite.com。修改为xxxx.github.io（你的网页地址）</li>
+</ul>
+<p>这是我安装时参考的教程地址<a href="http://zipperary.com/" target="_blank" rel="external">http://zipperary.com/</a></p>
+]]></content>
+    
+    
+      <category term="hexo" scheme="http://Dmtalen.com/categories/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Image Hosting]]></title>
+    <link href="http://Dmtalen.com/2014/03/09/post-1/"/>
+    <id>http://Dmtalen.com/2014/03/09/post-1/</id>
+    <published>2014-03-09T15:26:12.000Z</published>
+    <updated>2014-04-15T08:09:42.000Z</updated>
+    <content type="html"><![CDATA[<p>托管在github上的hexo，在国内的访问速度确实不太理想，原因大家都懂的。考虑到图片的加载速度以及以后博客的迁移，选择一个靠谱的图床是十分必要的，在试用了一些之后，最终选定<a href="http://www.qiniu.com/" target="_blank" rel="external">七牛云存储</a>，访问速度不错、每月10GB流量+总空间10GB+PUT/DELETE 10万次请求+GET 100万次请求、支持批量编辑图片样式、添加水印、原图保护等功能。邀请一个好友可以获取额外的5G容量（顺便打个<a href="https://portal.qiniu.com/signup?code=3lb7ag3fq5v0y" target="_blank" rel="external">广告</a>。</p>
+<p>当然网站其他体积较大的文件也可以上传上去，比如专用字库、JS等等，以加快网页的加载速度。</p>
+]]></content>
+    
+    
+      <category term="hexo" scheme="http://Dmtalen.com/categories/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://Dmtalen.com/2014/03/09/hello-world/"/>
+    <id>http://Dmtalen.com/2014/03/09/hello-world/</id>
+    <published>2014-03-09T10:14:28.000Z</published>
+    <updated>2015-01-01T06:25:20.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    
+      <category term="hexo" scheme="http://Dmtalen.com/categories/hexo/"/>
+    
+  </entry>
+  
+</feed>
