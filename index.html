@@ -163,6 +163,58 @@
   <header>
     
   
+    <h1 class="title"><a href="/2015/03/28/sublime_scheme/">配置Sublime Text 3 的Scheme运行环境</a></h1>
+  
+
+    <time datetime="2015-03-28T09:55:51.000Z">
+  <span class="day">28</span><span class="month">3月</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+  <p>由于最近在看《SICP》，不太喜欢书中MIT-Scheme系统自带的编辑器，所以决定配置一下Sublime Text3下的Scheme运行环境。</p>
+<p>MIT-Scheme解释器可以使用sublimeREPL插件配置，但是我的REPL一直出问题，所以放弃了，希望使用MIT-Scheme解释器的同学可以看一下stackoverflow上的<a href="http://stackoverflow.com/questions/22128034/mit-scheme-for-sublimerepl-windows" target="_blank" rel="external">这个问题</a>，毕竟使用MIT-Scheme解释器的话做习题会方便一些。</p>
+<p>因为MIT-Scheme解释器配置未果，所以我使用的是MzScheme解释器（也就是Racket），自带有DrRacket界面，<a href="http://racket-lang.org/" target="_blank" rel="external">下载地址</a>，安装完成之后，Sublime Text3的配置方法如下：</p>
+<ul>
+<li>Tools -&gt; Build System -&gt; New Build system</li>
+<li>修改产生的新文件的代码如下：</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">{</div><div class="line">    "<span class="attribute">shell_cmd</span>": <span class="value"><span class="string">"MzScheme -r \"$file\""</span></span>,</div><div class="line">    "<span class="attribute">path</span>":<span class="value"><span class="string">"C:\\Program Files\\Racket"</span></span>,</div><div class="line">    "<span class="attribute">file_regex</span>": <span class="value"><span class="string">"^(...*?):([0-9]*)"</span></span>,</div><div class="line">    "<span class="attribute">selector</span>": <span class="value"><span class="string">"source.scm, source.lisp"</span></span></div><div class="line">}</div></pre></td></tr></table></figure>
+
+<ul>
+<li>Path的值为Racket的安装目录，保存代码，ctrl+b便可以运行了。</li>
+</ul>
+
+
+    
+    <footer class="meta">
+      
+      
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
     <h1 class="title"><a href="/2015/01/01/summary/">年终总结什么的..根本不会写呢..</a></h1>
   
 
@@ -282,54 +334,6 @@
 <p>6月份以来因为google的关系导致我的blog也被逼到墙外了，正好被人说phase主题太卡坑访客干脆过两天物色一个不被墙的主题换掉好了。</p>
 <p>最后吐槽下我的科创项目还没做完导师先离职了= =。。（快结题了亚历山大。。</p>
 
-
-    
-    <footer class="meta">
-      
-      
-      
-    </footer>
-    
-  </div>
-  
-</article>
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <header>
-    
-  
-    <h1 class="title"><a href="/2014/05/07/readmore/">Add &quot;Read more&quot; to Phase Theme</a></h1>
-  
-
-    <time datetime="2014-05-07T07:29:59.000Z">
-  <span class="day">7</span><span class="month">5月</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-  <p>Phase主题在文章中使用<code>&lt;!--more--&gt;</code>添加索引后并不会在首页上生成”阅读全文”链接，于是参考了landscape主题中<code>\hexo\themes\landscape\layout\_partial\article.ejs</code>文件，为Phase主题添加”Read more”按钮：</p>
-<p>打开<code>\hexo\themes\phase\layout\_partial\article.ejs</code>文件：</p>
-<p>将</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (item.excerpt && index){ <span class="variable">%&gt;</span></div><div class="line">  &lt;<span class="variable">%-</span> item.excerpt <span class="variable">%&gt;</span></div><div class="line">&lt;% } <span class="keyword">else</span> { <span class="variable">%&gt;</span></div><div class="line">  &lt;<span class="variable">%-</span> item.content <span class="variable">%&gt;</span></div><div class="line">&lt;% } <span class="variable">%&gt;</span></div></pre></td></tr></table></figure>
-
-<p>替换为<br>      
-  <p class="article-more-link">
-    <a href="/2014/05/07/readmore/#more">Read more  -&gt;</a>
-  </p>
 
     
     <footer class="meta">

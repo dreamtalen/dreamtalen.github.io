@@ -176,6 +176,54 @@
   <header>
     
   
+    <h1 class="title"><a href="/2014/05/07/readmore/">Add &quot;Read more&quot; to Phase Theme</a></h1>
+  
+
+    <time datetime="2014-05-07T07:29:59.000Z">
+  <span class="day">7</span><span class="month">5月</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+  <p>Phase主题在文章中使用<code>&lt;!--more--&gt;</code>添加索引后并不会在首页上生成”阅读全文”链接，于是参考了landscape主题中<code>\hexo\themes\landscape\layout\_partial\article.ejs</code>文件，为Phase主题添加”Read more”按钮：</p>
+<p>打开<code>\hexo\themes\phase\layout\_partial\article.ejs</code>文件：</p>
+<p>将</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (item.excerpt && index){ <span class="variable">%&gt;</span></div><div class="line">  &lt;<span class="variable">%-</span> item.excerpt <span class="variable">%&gt;</span></div><div class="line">&lt;% } <span class="keyword">else</span> { <span class="variable">%&gt;</span></div><div class="line">  &lt;<span class="variable">%-</span> item.content <span class="variable">%&gt;</span></div><div class="line">&lt;% } <span class="variable">%&gt;</span></div></pre></td></tr></table></figure>
+
+<p>替换为<br>      
+  <p class="article-more-link">
+    <a href="/2014/05/07/readmore/#more">Read more  -&gt;</a>
+  </p>
+
+    
+    <footer class="meta">
+      
+      
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  
+    <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
     <h1 class="title"><a href="/2014/04/05/post-2/">DIC Lab1 Report</a></h1>
   
 
@@ -318,65 +366,6 @@
 <li><p>Phase主题很消耗资源，在测试beam效果时发现IE11的显示效果奇差无比(<del>天灭IE，退软保平安</del>，Firefox略显卡顿，Chrome完美支持(<del>chrome大法好</del>，如果效果实在太差可以关闭beam效果。</p>
 </li>
 </ul>
-
-
-    
-    <footer class="meta">
-      
-  <div class="cats">
-<a href="/categories/hexo/">hexo</a></div>
-
-      
-      
-    </footer>
-    
-  </div>
-  
-</article>
-
-  
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <header>
-    
-  
-    <h1 class="title"><a href="/2014/03/10/hexo-install-tips/">Hexo Install Tips</a></h1>
-  
-
-    <time datetime="2014-03-10T08:08:15.000Z">
-  <span class="day">10</span><span class="month">3月</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-  <p>hexo是一个基于Node.js的静态博客程序，可以方便的生成静态网页托管在github上。经过<a href="https://plus.google.com/u/0/+%E7%B2%92%E7%B2%92%E6%A9%99lili/posts" target="_blank" rel="external">橙子菊苣</a>介绍，了解到了这个由一名台湾大学生创建的作品，google了下安装教程，加上非常详细的官方文档，搭建过程还算顺利。</p>
-<p>“教程说的可能出现的问题一定会出，没说的问题也一定会出”的光环这次也不负众望地发挥了作用（上次给Nexus5破解电信出现一堆问题，写号时弄坏了两张sim卡，还好最后去营业厅“我也不知道怎么回事它就自己变成这样了”免费换卡了。。）</p>
-<p>介于网上教程有一箩筐，我就把自己个别遇到的问题简单分析一下：</p>
-<ul>
-<li><p>如果你是第一次用github和git的话，先把ssh设置好，官方有详细教程。</p>
-</li>
-<li><p>如果deploy过程中出现以下报错：</p>
-</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">fatal: <span class="string">'github'</span> does <span class="operator">not</span> appear <span class="built_in">to</span> be <span class="operator">a</span> git repository</div><div class="line">fatal: could <span class="operator">not</span> <span class="built_in">read</span> <span class="built_in">from</span> remote repository.</div></pre></td></tr></table></figure>
-
-<p>  请直接删除.deploy文件夹，重新deploy即可。</p>
-<ul>
-<li>如果没有绑定自己的域名，将disgus设置好后点击comment按钮出现“yoursite.com/xxxxx”和“便民导航类似的网页时，请修改_config.yml文件中的url属性，默认值是yoursite.com。修改为xxxx.github.io（你的网页地址）</li>
-</ul>
-<p>这是我安装时参考的教程地址<a href="http://zipperary.com/" target="_blank" rel="external">http://zipperary.com/</a></p>
 
 
     

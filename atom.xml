@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Right people，right things]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://Dmtalen.com/"/>
-  <updated>2015-01-01T08:02:03.346Z</updated>
+  <updated>2015-03-28T10:16:02.643Z</updated>
   <id>http://Dmtalen.com/</id>
   
   <author>
@@ -13,6 +13,29 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[配置Sublime Text 3 的Scheme运行环境]]></title>
+    <link href="http://Dmtalen.com/2015/03/28/sublime_scheme/"/>
+    <id>http://Dmtalen.com/2015/03/28/sublime_scheme/</id>
+    <published>2015-03-28T09:55:51.000Z</published>
+    <updated>2015-03-28T10:15:43.000Z</updated>
+    <content type="html"><![CDATA[<p>由于最近在看《SICP》，不太喜欢书中MIT-Scheme系统自带的编辑器，所以决定配置一下Sublime Text3下的Scheme运行环境。</p>
+<p>MIT-Scheme解释器可以使用sublimeREPL插件配置，但是我的REPL一直出问题，所以放弃了，希望使用MIT-Scheme解释器的同学可以看一下stackoverflow上的<a href="http://stackoverflow.com/questions/22128034/mit-scheme-for-sublimerepl-windows" target="_blank" rel="external">这个问题</a>，毕竟使用MIT-Scheme解释器的话做习题会方便一些。</p>
+<p>因为MIT-Scheme解释器配置未果，所以我使用的是MzScheme解释器（也就是Racket），自带有DrRacket界面，<a href="http://racket-lang.org/" target="_blank" rel="external">下载地址</a>，安装完成之后，Sublime Text3的配置方法如下：</p>
+<ul>
+<li>Tools -&gt; Build System -&gt; New Build system</li>
+<li>修改产生的新文件的代码如下：</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">{</div><div class="line">    "<span class="attribute">shell_cmd</span>": <span class="value"><span class="string">"MzScheme -r \"$file\""</span></span>,</div><div class="line">    "<span class="attribute">path</span>":<span class="value"><span class="string">"C:\\Program Files\\Racket"</span></span>,</div><div class="line">    "<span class="attribute">file_regex</span>": <span class="value"><span class="string">"^(...*?):([0-9]*)"</span></span>,</div><div class="line">    "<span class="attribute">selector</span>": <span class="value"><span class="string">"source.scm, source.lisp"</span></span></div><div class="line">}</div></pre></td></tr></table></figure>
+
+<ul>
+<li>Path的值为Racket的安装目录，保存代码，ctrl+b便可以运行了。</li>
+</ul>
+]]></content>
+    
+    
+  </entry>
   
   <entry>
     <title><![CDATA[年终总结什么的..根本不会写呢..]]></title>
